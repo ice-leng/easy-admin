@@ -4,7 +4,6 @@ namespace EasySwoole\EasySwoole;
 
 use EasySwoole\EasySwoole\AbstractInterface\Event;
 use EasySwoole\EasySwoole\Swoole\EventRegister;
-use EasySwoole\Skeleton\Component\Process\TickProcess;
 use EasySwoole\Skeleton\Utility\InitializeUtil;
 use Swlib\SaberGM;
 
