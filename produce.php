@@ -28,5 +28,6 @@ return [
     ],
     'LOG_DIR' => [
         'dir' => 'runtime/log'
-    ]
+    ],
+    "ENV" => 'online'
 ];

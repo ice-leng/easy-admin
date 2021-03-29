@@ -2,14 +2,9 @@
 
 namespace EasySwoole\EasySwoole;
 
-use EasySwoole\Component\Di;
 use EasySwoole\EasySwoole\AbstractInterface\Event;
 use EasySwoole\EasySwoole\Swoole\EventRegister;
-use EasySwoole\Http\Message\Status;
-use EasySwoole\Http\Request;
-use EasySwoole\Http\Response;
 use EasySwoole\Skeleton\Component\Process\TickProcess;
-use EasySwoole\Skeleton\Helpers\StringHelper;
 use EasySwoole\Skeleton\Utility\InitializeUtil;
 use Swlib\SaberGM;
 
@@ -53,8 +48,6 @@ class EasySwooleEvent implements Event
 
     public static function mainServerCreate(EventRegister $register)
     {
-        InitializeUtil::process([
-            TickProcess::class,
-        ], false);
+
     }
 }
