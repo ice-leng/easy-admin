@@ -47,6 +47,6 @@ class EasySwooleEvent implements Event
 
     public static function mainServerCreate(EventRegister $register)
     {
-
+        InitializeUtil::process([]);
     }
 }
