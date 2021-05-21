@@ -9,6 +9,41 @@ use EasySwoole\Skeleton\Framework\BaseEnum;
 class Error extends BaseEnum
 {
     /**
+     * @Message("成功")
+     */
+   const ERROR_EASYSWOOLE_SKELETON_ERRORS_COMMONERROR_SUCCESS = '0';
+   
+    /**
+     * @Message("系统错误，稍后刷新重试")
+     */
+   const ERROR_EASYSWOOLE_SKELETON_ERRORS_COMMONERROR_SERVER_ERROR = 'F-000-000-500';
+   
+    /**
+     * @Message("错误的请求参数")
+     */
+   const ERROR_EASYSWOOLE_SKELETON_ERRORS_COMMONERROR_INVALID_PARAMS = 'F-000-000-400';
+   
+    /**
+     * @Message("请重新登录")
+     */
+   const ERROR_EASYSWOOLE_SKELETON_ERRORS_COMMONERROR_INVALID_TOKEN = 'F-000-000-413';
+   
+    /**
+     * @Message("请重新登录")
+     */
+   const ERROR_EASYSWOOLE_SKELETON_ERRORS_COMMONERROR_TOKEN_EXPIRED = 'F-000-000-403';
+   
+    /**
+     * @Message("未找到")
+     */
+   const ERROR_EASYSWOOLE_SKELETON_ERRORS_COMMONERROR_SERVER_NOT_FOUND = 'F-000-000-404';
+   
+    /**
+     * @Message("没权限")
+     */
+   const ERROR_EASYSWOOLE_SKELETON_ERRORS_COMMONERROR_SERVER_NOT_PERMISSION = 'F-000-000-401';
+   
+    /**
      * @Message("管理员不存在")
      */
    const ERROR_APP_CONSTANTS_ERRORS_PLATFORM_PLATFORMERROR_NOT_FOUND = 'B-001-001-001';
@@ -52,40 +87,5 @@ class Error extends BaseEnum
      * @Message("管理员账号已存在")
      */
    const ERROR_APP_CONSTANTS_ERRORS_PLATFORM_PLATFORMERROR_ACCOUNT_EXIST = 'B-001-001-09';
-   
-    /**
-     * @Message("成功")
-     */
-   const ERROR_EASYSWOOLE_SKELETON_ERRORS_COMMONERROR_SUCCESS = '0';
-   
-    /**
-     * @Message("系统错误")
-     */
-   const ERROR_EASYSWOOLE_SKELETON_ERRORS_COMMONERROR_SERVER_ERROR = 'F-000-000-500';
-   
-    /**
-     * @Message("错误的请求参数")
-     */
-   const ERROR_EASYSWOOLE_SKELETON_ERRORS_COMMONERROR_INVALID_PARAMS = 'F-000-000-400';
-   
-    /**
-     * @Message("请重新登录")
-     */
-   const ERROR_EASYSWOOLE_SKELETON_ERRORS_COMMONERROR_INVALID_TOKEN = 'F-000-000-413';
-   
-    /**
-     * @Message("请重新登录")
-     */
-   const ERROR_EASYSWOOLE_SKELETON_ERRORS_COMMONERROR_TOKEN_EXPIRED = 'F-000-000-403';
-   
-    /**
-     * @Message("未找到")
-     */
-   const ERROR_EASYSWOOLE_SKELETON_ERRORS_COMMONERROR_SERVER_NOT_FOUND = 'F-000-000-404';
-   
-    /**
-     * @Message("没权限")
-     */
-   const ERROR_EASYSWOOLE_SKELETON_ERRORS_COMMONERROR_SERVER_NOT_PERMISSION = 'F-000-000-401';
    
 }
