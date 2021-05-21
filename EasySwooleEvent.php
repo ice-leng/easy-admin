@@ -22,18 +22,13 @@ class EasySwooleEvent implements Event
         InitializeUtil::cors();
 
         // config
-        InitializeUtil::config(EASYSWOOLE_ROOT . '/App/Configs');
+        InitializeUtil::config();
 
         // di
-        InitializeUtil::di([
-            EASYSWOOLE_ROOT . '/vendor/easyswoole/hyperf-orm/src/Configs',
-            EASYSWOOLE_ROOT . '/vendor/easyswoole-tool/hyperf-orm-permission/src/Configs',
-            EASYSWOOLE_ROOT . '/App/Configs',
-        ]);
+        InitializeUtil::di();
 
         // service
-        $servicePath = EASYSWOOLE_ROOT . '/App/Service';
-        InitializeUtil::serviceDi($servicePath, 'App\\Service');
+        InitializeUtil::serviceDi();
 
         // redis
         InitializeUtil::redis();
